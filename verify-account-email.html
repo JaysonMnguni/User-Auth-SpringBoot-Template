@@ -1,48 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/colors.css">
-    <link rel="stylesheet" href="css/style.css">
     <title>Verify Account</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        .secondary-font{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Colors */
+
+        .bg-dark-purple{
+            background-color: #252330;
+        }
+
+        .bg-light-purle{
+            background-color: #464559;
+        }
+
+        .bg-sea-green{
+            background-color: #48C9B0;
+        }
+
+        .bg-ocean-blue{
+            background-color: #00C7E2;
+        }
+
+        .text-light-grey{
+            color: #E6E6E6;
+        }
+
+        .text-link-green{
+            color: #A5E9DC;
+        }
+
+        .form-text-purle{
+            color: #6C6B77;
+        }
+
+        .main-font{
+            font-family: 'Cooper Black';
+        }
+
+        .base-white{
+            color: #fff;
+        }
+
+        /* End Of Colors */
+
+
+        /* Email Template Styling */
+
+        /* Body styling */
+        body{
+            height:  100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Main Container Styling */
+        #main-container{
+            padding: 15px 25px;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        #main-container .row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+
+        #verify-btn{
+            text-align: center;
+            padding: 15px 5px;
+            border-radius: 5px;  
+            width: 100%;     
+        }
+        #verify-btn a{
+            text-decoration: none;
+            
+        }
+
+        /* End Of Email Template Styling */
+    </style>
 </head>
 
-<body class="bg-dark-purple d-flex align-items-center">
+<body class="bg-dark-purple">
 
     <!-- Main Container -->
-    <div class="container bg-light-purle rounded-3 p-5 col-9">
-        <!-- Row -->
-        <div class="row">
-            <!-- Column: Text Content and Action Buttons -->
-            <div id="column" class="col py-3 px-4">
-                <h1 class="main-font text-white">Verify Account</h1>
-                <p class="lead text-light-grey">
-                    Click below to verify your account.
-                </p>
-                <p class="lead text-light-grey">
-                    Temporary / Current Password:
-                </p>
-                <p class="lead text-light-grey">
-                    <b>thbh45t-hkjl656hls-uiiow-456slm</b>
-                </p>
-                <!-- Action Buttons -->
-                <a href="sign-in.html" class="btn btn-lg bg-sea-green text-white main-font col-12"> Verify</a>
-                <!-- End Of Action Buttons -->
+    <div id="main-container" class="bg-light-purle">
+        <!-- Column: Text Content and Action Buttons -->
+        <div id="column" class="">
+            <h1 class="main-font base-white">Verify Account</h1>
+            <p class="secondary-font text-light-grey" style="margin: 5px 0px; text-align: center;">
+                Click below to verify your account.
+            </p>
+            <br>
+            <!-- Action Buttons -->
+            <div id="verify-btn" class="bg-sea-green">
+                <a  href="" class="main-font base-white"> Verify</a>
             </div>
-            <!-- End Of Column: Text Content and Action Buttons -->
-
-            <!-- Column: Image -->
-            <div id="column" class="col">
-                <img src="Images/undraw_mail_sent_re_0ofv.svg" height="350" width="350" alt="user phone">
-            </div>
-            <!-- End Of Column: Image -->
+            
+            <!-- End Of Action Buttons -->
         </div>
-        <!-- End Of Row -->
+        <!-- End Of Column: Text Content and Action Buttons -->
     </div>
     <!-- End Of Main Container -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>
